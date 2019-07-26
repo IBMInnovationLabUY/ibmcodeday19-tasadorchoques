@@ -47,7 +47,7 @@ En este workshop crearemos un tasador de choques que reconocerá cuáles son las
 
 * Clonar el repositorio
   ```
-  $ git clone https://github.ibm.com/Adolfo-Scalabrini/visual-recognition-code-day.git
+  $ git clone https://github.com/IBMInnovationLabUY/tasador-choques-code-day
   ```
 
 Seleccione la opción que le interesa para realizar el workshop:
@@ -138,7 +138,7 @@ Una vez que le pusimos nombre a nuestro modelo, es hora de crear las clases. Com
 * Vidrio lateral roto
 * Vidrio frontal roto
 
-Para poder crear nuestras clases cargaremos los conjuntos de datos que utilizaremos. Las imágenes de entrenamiento se encuentran en el directorio _Código/Imágenes_vehículos_dañados/Entrenamiento_ en sus respectivas carpetas según la clase que representan. Simplemente presionamos el botón **Browse** y seleccionamos los .zip que se encuentran dentro de cada carpeta.
+Para poder crear nuestras clases cargaremos los conjuntos de datos que utilizaremos. Las imágenes de entrenamiento se encuentran en el directorio _Código/Imágenes_vehículos_dañados/Entrenamiento_. Simplemente presionamos el botón **Browse** y seleccionamos los .zip que se encuentran dentro del directorio.
 
 <p align="center">
   <img src="Imágenes/carga.png" width="722" length="500">
