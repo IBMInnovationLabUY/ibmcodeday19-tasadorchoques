@@ -19,6 +19,8 @@ public class Main {
 		
 		String apiKey = "";
 		String classifierId = "";
+
+		// Ejemplo: imageFileName = "d001.jpeg";
 		String imageFileName = "";
 		Float threshold = new Float(0.4);
 		

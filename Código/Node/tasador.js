@@ -3,6 +3,8 @@ const fs = require('fs');
 
 const IAM_APIKEY = '';
 const CLASSIFIER_ID = '';
+
+// Ejemplo: IMAGE_FILE_NAME = 'd001.jpeg';
 const IMAGE_FILE_NAME = '';
 const THRESHOLD = 0.4;
 
