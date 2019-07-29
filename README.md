@@ -61,15 +61,16 @@ Según la opción anterior:
 * Para Java
   - Instalar [Eclipse](https://www.eclipse.org/downloads/packages/installer)
   - Abrir Eclipse
-  - Crear workspace dentro de la carpeta _Código_
-  - Copiar SDK Watson y pegar en la raíz del workspace
-  - En Eclipse, agregar el .jar al proyecto
+  - Cuando se nos pide definir el workspace en el que trabajaremos, creamos uno dentro de la carpeta _Código_
+  - Copiamos el SDK de Watson (.jar) que se encuentra en _Código/Java_ y lo pegamos en la raíz del workspace
+  - En Eclipse, agregar el .jar al proyecto:
     - Botón derecho sobre la carpeta del proyecto
     - Abrir pestaña Build Path y seleccionar opción Add External Archives
-    - Seleccionar el .jar
-  - En el package src, crear una clase
-    - A la clase le ponemos como nombre Main y main_package al paquete que la contiene
-  - Copiamos el archivo Main.java que se encuentra en el repositorio y lo pegamos en _main_package_, sustituyendo la clase Main que creamos anteriormente
+    - Seleccionar el .jar que guardamos anteriormente en la raíz del workspace
+  - En el package src, crear una clase:
+    - Nombre paquete: main_package
+    - Nombre clase: Main
+  - Copiamos el archivo Main.java que se encuentra en _Código/Java_ y lo pegamos en _main_package_, sustituyendo la clase Main que creamos en Eclipse anteriormente
 
 ## Arquitectura
 
