@@ -26,8 +26,9 @@ En este workshop crearemos un tasador de choques que reconocerá cuáles son las
     - Entrenamiento
     - Test
   - Java
-    - SDK de Watson para Java (.jar)
-    - Main.java
+    - Dependencias
+      - SDK de Watson para Java (.jar)
+    - tasador.jar
   - Node
     - tasador.js
 - Imágenes
@@ -62,15 +63,17 @@ Según la opción anterior:
   - Instalar [Eclipse](https://www.eclipse.org/downloads/packages/installer)
   - Abrir Eclipse
   - Cuando se nos pide definir el workspace en el que trabajaremos, creamos uno dentro de la carpeta _Código_
-  - Copiamos el SDK de Watson (.jar) que se encuentra en _Código/Java_ y lo pegamos en la raíz del workspace
-  - En Eclipse, agregar el .jar al proyecto:
-    - Botón derecho sobre la carpeta del proyecto
-    - Abrir pestaña Build Path y seleccionar opción Add External Archives
-    - Seleccionar el .jar que guardamos anteriormente en la raíz del workspace
-  - En el package src, crear una clase:
-    - Nombre paquete: main_package
-    - Nombre clase: Main
-  - Copiamos el archivo Main.java que se encuentra en _Código/Java_ y lo pegamos en _main_package_, sustituyendo la clase Main que creamos en Eclipse anteriormente
+  - Dentro de Eclipse:
+    - Crear un proyecto Java con nombre Tasador
+    - Importar el proyecto:
+      - Botón derecho sobre el proyecto y seleccionar Importar
+      - Seleccionamos la opción Archive File que se encuentra en la catergoría General y le damos Next
+      - Seleccionamos el archivo tasador.jar que se encuentra en _Código/Java_
+      - Guardamos en Tasador/src y finalizamos
+    - Agregar las dependencias de Watson al proyecto:
+      - Botón derecho sobre la carpeta del proyecto
+      - Abrir pestaña Build Path y seleccionar opción Add External Archives
+      - Seleccionar el .jar que se encuentra en _Código/Java/Dependencias_
 
 ## Arquitectura
 
