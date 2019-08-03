@@ -31,7 +31,7 @@ En este workshop crearemos un tasador de choques que reconocerá cuáles son las
     - tasador.jar
   - Node
     - tasador.js
-- Imágenes
+- Imagenes
 - README.md
 
 ## Prerrequisitos
