@@ -21,8 +21,8 @@ Uno de los casos más utilizados de análisis de imágenes es el de los clasific
 En este workshop crearemos un tasador de choques que reconocerá cuáles son las partes dañadas de un vehículo a partir de una imagen. Para esto, será necesario crear un clasificador multiclase en el servicio Watson Visual Recognition que determine la probabilidad con la que una parte dañada aparece en la imagen deseada. Luego, integraremos el modelo creado con un código en Node.js o Java, según cual su interés, que, utilizando el SDK de para Watson, consuma la instancia del servicio de Visual Recognition que se ha creado. Este código imprimirá las diferentes partes dañadas que encuentra en la imagen con sus respectivas probabilidades.
 
 ## ¿Qué tiene el repositorio?
-- Código
-  - Imágenes_vehículos_dañados
+- Codigo
+  - Imagenes_vehiculos_danados
     - Entrenamiento
     - Test
   - Java
@@ -62,18 +62,18 @@ Según la opción anterior:
 * Para Java
   - Instalar [Eclipse](https://www.eclipse.org/downloads/packages/installer)
   - Abrir Eclipse
-  - Cuando se nos pide definir el workspace en el que trabajaremos, creamos uno dentro de la carpeta _Código_
+  - Cuando se nos pide definir el workspace en el que trabajaremos, creamos uno dentro de la carpeta _Codigo_
   - Dentro de Eclipse:
     - Crear un proyecto Java con nombre Tasador
     - Importar el proyecto:
       - Botón derecho sobre el proyecto y seleccionar Importar
       - Seleccionamos la opción Archive File que se encuentra en la catergoría General y le damos Next
-      - Seleccionamos el archivo tasador.jar que se encuentra en _Código/Java_
+      - Seleccionamos el archivo tasador.jar que se encuentra en _Codigo/Java_
       - Guardamos en Tasador/src y finalizamos
     - Agregar las dependencias de Watson al proyecto:
       - Botón derecho sobre la carpeta del proyecto
       - Abrir pestaña Build Path y seleccionar opción Add External Archives
-      - Seleccionar el .jar que se encuentra en _Código/Java/Dependencias_
+      - Seleccionar el .jar que se encuentra en _Codigo/Java/Dependencias_
 
 ## Arquitectura
 
@@ -142,7 +142,7 @@ Una vez que le pusimos nombre a nuestro modelo, es hora de crear las clases. Com
 * Vidrio lateral roto
 * Vidrio frontal roto
 
-Para poder crear nuestras clases cargaremos los conjuntos de datos que utilizaremos. Las imágenes de entrenamiento se encuentran en el directorio _Código/Imágenes_vehículos_dañados/Entrenamiento_. Simplemente presionamos el botón **Browse** y seleccionamos los .zip que se encuentran dentro del directorio.
+Para poder crear nuestras clases cargaremos los conjuntos de datos que utilizaremos. Las imágenes de entrenamiento se encuentran en el directorio _Codigo/Imagenes_vehiculos_danados/Entrenamiento_. Simplemente presionamos el botón **Browse** y seleccionamos los .zip que se encuentran dentro del directorio.
 
 <p align="center">
   <img src="Imágenes/carga.png" width="722" length="500">
@@ -193,7 +193,7 @@ Nos encontramos con información general acerca del modelo. Para comenzar a prob
   <img src="Imágenes/testmodel.png" width="722" length="500">
 </p>
 
-Una vez allí, simplemente seleccionamos **browse** y cargamos las imágenes que se encuentran en _Código/Imágenes_vehículos_dañados/Test_.
+Una vez allí, simplemente seleccionamos **browse** y cargamos las imágenes que se encuentran en _Codigo/Imagenes_vehiculos_danados/Test_.
 
 <p align="center">
   <img src="Imágenes/testmodel2.png" width="722" length="500">
@@ -252,17 +252,17 @@ En la parte de Modelos, buscamos el modelo que hemos creado y guardamos el campo
 
 ### Node.js
 
-Si decidimos realizar el workshop en Node, debemos abrir el directorio _Código_ en Visual Studio Code e ingresar al archivo tasador.js que se encuentra en el directorio _Código/Node_.
+Si decidimos realizar el workshop en Node, debemos abrir el directorio _Codigo_ en Visual Studio Code e ingresar al archivo tasador.js que se encuentra en el directorio _Codigo/Node_.
 
 Dentro del archivo, le asignamos el valor de la api-key que guardamos anteriormente a la constante _IAM_APIKEY_ en la línea 4.
 
 También le asignamos el valor del MODEL_ID a la constante CLASSIFIER_ID en la línea 5.
 
-Luego, en la línea 6 tenemos una constante _IMAGE_FILE_NAME_ que contiene el nombre de la imagen que será clasificada por nuestro modelo. Puede definir cuál es la imagen que desea clasificar cambiando este valor. Puede seleccionar cualquier imagen que se encuentre en el directorio _Código/Imágenes_vehículos_dañados/Test_ o también agregar sus propias fotos siempre que las guarde en el directorio anteriormente mencionado.
+Luego, en la línea 8 tenemos una constante _IMAGE_FILE_NAME_ que contiene el nombre de la imagen que será clasificada por nuestro modelo. Puede definir cuál es la imagen que desea clasificar cambiando este valor. Puede seleccionar cualquier imagen que se encuentre en el directorio _Codigo/Imagenes_vehiculos_danados/Test_ o también agregar sus propias fotos siempre que las guarde en el directorio anteriormente mencionado.
 
-Por último, falta configurar la constante _THRESHOLD_ en la línea 7. Esta define un límite inferior de confianza, es decir, las clases que el modelo defina que se encuentran en la imagen con una confianza menor a ese límite, no serán impresas en consola. 
+Por último, falta configurar la constante _THRESHOLD_ en la línea 9. Esta define un umbral de confianza, es decir, las clases que el modelo defina que se encuentran en la imagen con una confianza menor a ese valor, no serán impresas en consola. 
 
-Ahora solo resta ejecutar el archivo. En la consola, nos ubicamos en el directorio _Código/Node_ y ejecutamos el comando:
+Ahora solo resta ejecutar el archivo. En la consola, nos ubicamos en el directorio _Codigo/Node_ y ejecutamos el comando:
 
 ``` 
 node tasador.js 
@@ -272,14 +272,14 @@ Podrá ver cómo se imprimen las diferentes partes dañadas que el modelo recono
 
 ### Java
 
-Si decidimos realizar el workshop en Java, debemos abrir Eclipse, especificar que el workspace que vamos a utilizar es el que creamos anteriormente y luego, abrir el archivo Main.java que se encuentra en el paquete _main_package_.
+Si decidimos realizar el workshop en Java, debemos abrir Eclipse, especificar que el workspace que vamos a utilizar es el que creamos anteriormente y luego, abrir el archivo Main.java.
 
-Dentro del archivo, le asignamos el valor de la api-key que guardamos anteriormente a la variable _apiKey_ en la línea 20.
+Dentro del archivo, le asignamos el valor de la api-key que guardamos anteriormente a la variable _apiKey_ en la línea 18.
 
-También le asignamos el valor del MODEL_ID a la variable _classifierId_ en la línea 21.
+También le asignamos el valor del MODEL_ID a la variable _classifierId_ en la línea 19.
 
-Luego, en la línea 22, tenemos una variable _imageFileName_ que contiene el nombre de la imagen que será clasificada por nuestro modelo. Puede definir cuál es la imagen que desea clasificar cambiando este valor. Puede seleccionar cualquier imagen que se encuentre en el directorio _Código/Imágenes_vehículos_dañados/Test_ o también agregar sus propias fotos siempre que las guarde en el directorio anteriormente mencionado.
+Luego, en la línea 22, tenemos una variable _imageFileName_ que contiene el nombre de la imagen que será clasificada por nuestro modelo. Puede definir cuál es la imagen que desea clasificar cambiando este valor. Puede seleccionar cualquier imagen que se encuentre en el directorio _Codigo/Imagenes_vehiculos_danados/Test_ o también agregar sus propias fotos siempre que las guarde en el directorio anteriormente mencionado.
 
-Por último, falta configurar la variable _threshold_ en la línea 23. Esta define un límite inferior de confianza, es decir, las clases que el modelo defina que se encuentran en la imagen con una confianza menor a ese límite, no serán impresas en consola.
+Por último, falta configurar la variable _threshold_ en la línea 23. Esta define un umbral de confianza, es decir, las clases que el modelo defina que se encuentran en la imagen con una confianza menor a ese valor, no serán impresas en consola.
 
 Ejecutamos el Main de nuestro proyecto y podremos observar cómo se imprimen las diferentes partes dañadas que el modelo reconoce en su imagen.
