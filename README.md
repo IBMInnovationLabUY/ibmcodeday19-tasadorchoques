@@ -58,7 +58,7 @@ Seleccione la opción que le interesa para realizar el workshop:
 Según la opción anterior:
 * Para Node.js
   - Instalar [Visual Studio Code](https://code.visualstudio.com/download)
-  - Dirigirse al directorio _Código/Node_ y ejecutar el comando ``` npm install ```
+  - Dirigirse al directorio _Codigo/Node_ y ejecutar el comando ``` npm install ```
 * Para Java
   - Instalar [Eclipse](https://www.eclipse.org/downloads/packages/installer)
   - Abrir Eclipse
