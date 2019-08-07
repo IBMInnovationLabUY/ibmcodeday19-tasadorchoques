@@ -35,7 +35,7 @@ En este workshop crearemos un tasador de choques que reconocerá cuáles son las
 - README.md
 
 ## Prerrequisitos
-* Registrarse en IBM Cloud: [https://cloud.ibm.com/registration](https://cloud.ibm.com/registration)
+* Registrarse en IBM Cloud: [https://ibm.biz/Bd26aa](https://ibm.biz/Bd26aa)
 * Instalar Git
   - [Windows](https://gitforwindows.org/)
   - Linux
