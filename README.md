@@ -75,6 +75,13 @@ Según la opción anterior:
       - Abrir pestaña Build Path y seleccionar opción Add External Archives
       - Seleccionar el .jar que se encuentra en _Codigo/Java/Dependencias_
 
+Si se utiliza Eclipse, se debe llegar al siguiente estado:
+
+<p align="center">
+  <img src="Imagenes/estado_final_eclipse.jpg" width="722" length="500">
+</p>
+
+
 ## Arquitectura
 
 <p align="center">
