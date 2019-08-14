@@ -78,7 +78,7 @@ Según la opción anterior:
 Si se utiliza Eclipse, se debe llegar al siguiente estado:
 
 <p align="center">
-  <img src="Imagenes/estado_final_eclipse.jpg" width="722" length="500">
+  <img src="Imagenes/estado_final_eclipse.png" width="722" length="500">
 </p>
 
 
