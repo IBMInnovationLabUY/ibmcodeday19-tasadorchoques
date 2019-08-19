@@ -290,3 +290,11 @@ Luego, en la línea 22, tenemos una variable _imageFileName_ que contiene el nom
 Por último, falta configurar la variable _threshold_ en la línea 23. Esta define un umbral de confianza, es decir, las clases que el modelo defina que se encuentran en la imagen con una confianza menor a ese valor, no serán impresas en consola.
 
 Ejecutamos el Main de nuestro proyecto y podremos observar cómo se imprimen las diferentes partes dañadas que el modelo reconoce en su imagen.
+
+### Python
+
+Además, mediante este lenguaje se provee un mecanistmo para crear y entrenar un modelo clasificador multiclase que cumpla con el proposito del workshop desde código. 
+
+Concretamente, se provee un script en Python mediante el cual se puede crear un nuevo modelo que contenga las clases antes mencionadas y entrenarlo para su posterior testeo.
+
+Para realizar las tareas antes mencionadas basta con agregar las credenciales del servicio en la linea 7 y ejecutar el script mediante el comando ``` $ python3 create_classifier.py ```.
